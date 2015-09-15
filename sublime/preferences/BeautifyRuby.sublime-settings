@@ -1,0 +1,11 @@
+{
+    // Would you prefer a tab or two spaces to represent a tab
+    // The default is two spaces represented by 'space'
+    // anything else will use one tab character
+    "tab_or_space": "tab",
+    "ruby": "/Users/mactop/.rbenv/versions/2.1.2/bin",
+    "file_patterns": ["\\.html", "\\.erb", "\\.rb", "\\.rake", "Rakefile", "Gemfile"],
+    "html_erb_patterns": ["\\.html\\.erb"],
+    "run_on_save": true,
+    "save_on_beautify": true
+}

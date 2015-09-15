@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>kenbeit.com</string>
+	<key>category</key>
+	<string>Internet</string>
+	<key>connections</key>
+	<dict>
+		<key>1ACA4AA4-FCC0-4F36-B242-67DA7A2BA6C4</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>A0ACC27A-E4E0-4A03-ABFE-7A1495C2AE31</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+		<key>6EB30206-C77B-46E8-84B3-C48A44AAC850</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>1DDD7109-8EE4-4720-829C-5C82DB7DB787</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>kenshin</string>
+	<key>description</key>
+	<string>search gem from rubygems.org</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>rubygems</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>plusspaces</key>
+				<false/>
+				<key>url</key>
+				<string>{query}</string>
+				<key>utf8</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>1DDD7109-8EE4-4720-829C-5C82DB7DB787</string>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>escaping</key>
+				<integer>63</integer>
+				<key>keyword</key>
+				<string>gem s</string>
+				<key>runningsubtext</key>
+				<string>Please Wait</string>
+				<key>script</key>
+				<string>require_once('workflows.php');
+$w = new Workflows();
+$query = urlencode( "{query}" );
+$url = "http://rubygems.org/api/v1/search.json?query=$query";
+$suggestions = $w-&gt;request( $url );
+$suggestions = json_decode( $suggestions );
+foreach( $suggestions as $suggest ):
+  $w-&gt;result( $suggest-&gt;name, $suggest-&gt;project_uri, $suggest-&gt;name, 'version: '. $suggest-&gt;version .' authors '. $suggest-&gt;authors .' info: '. $suggest-&gt;info, 'icon.png' );
+endforeach;
+
+if ( count( $w-&gt;results() ) == 0 ):
+        $w-&gt;result( 'gems', 'https://rubygems.org/search?query='. $query, 'Oops...', 'No gem found', 'icon.png', 'yes' );
+endif;	
+
+echo $w-&gt;toxml();
+</string>
+				<key>subtext</key>
+				<string>Search gems from rubygems.org</string>
+				<key>title</key>
+				<string>Type the gem name</string>
+				<key>type</key>
+				<integer>1</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>6EB30206-C77B-46E8-84B3-C48A44AAC850</string>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>escaping</key>
+				<integer>63</integer>
+				<key>keyword</key>
+				<string>gem i</string>
+				<key>runningsubtext</key>
+				<string>Please Wait</string>
+				<key>script</key>
+				<string>require_once('workflows.php');
+$w = new Workflows();
+$query = urlencode( "{query}" );
+$url = "http://rubygems.org/api/v1/search.json?query=$query";
+$suggestions = $w-&gt;request( $url );
+$suggestions = json_decode( $suggestions );
+foreach( $suggestions as $suggest ):
+  $w-&gt;result( $suggest-&gt;name, 'gem install '.$suggest-&gt;name, $suggest-&gt;name, 'version: '. $suggest-&gt;version .' authors '. $suggest-&gt;authors .' info: '. $suggest-&gt;info, 'icon.png' );
+endforeach;
+
+echo $w-&gt;toxml();
+</string>
+				<key>subtext</key>
+				<string>Install rubygems</string>
+				<key>title</key>
+				<string>Type the gem name</string>
+				<key>type</key>
+				<integer>1</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>1ACA4AA4-FCC0-4F36-B242-67DA7A2BA6C4</string>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>script</key>
+				<string>{query}</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.terminalcommand</string>
+			<key>uid</key>
+			<string>A0ACC27A-E4E0-4A03-ABFE-7A1495C2AE31</string>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string></string>
+	<key>uidata</key>
+	<dict>
+		<key>1ACA4AA4-FCC0-4F36-B242-67DA7A2BA6C4</key>
+		<dict>
+			<key>ypos</key>
+			<real>200</real>
+		</dict>
+		<key>1DDD7109-8EE4-4720-829C-5C82DB7DB787</key>
+		<dict>
+			<key>ypos</key>
+			<real>10</real>
+		</dict>
+		<key>6EB30206-C77B-46E8-84B3-C48A44AAC850</key>
+		<dict>
+			<key>ypos</key>
+			<real>10</real>
+		</dict>
+		<key>A0ACC27A-E4E0-4A03-ABFE-7A1495C2AE31</key>
+		<dict>
+			<key>ypos</key>
+			<real>200</real>
+		</dict>
+	</dict>
+	<key>webaddress</key>
+	<string>kenbeit.com</string>
+</dict>
+</plist>

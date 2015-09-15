@@ -1,0 +1,380 @@
+[{
+    "keys": ["super+v"],
+    "command": "paste_and_indent"
+  }, {
+    "keys": ["super+shift+v"],
+    "command": "paste"
+  }, {
+    "keys": ["super+shift+h"],
+    "command": "reindent"
+  },{ 
+    "keys": ["super+shift+;"], "command": "run_macro_file", "args": {"file": "Packages/User/smart-semicolon.sublime-macro"}, "context":
+        [
+             { "key": "selector", "operator": "equal", "operand": "source.js" }
+        ]
+   },
+  {
+    "keys": ["super+shift+space"],
+    "command": "expand_selection",
+    "args": {
+      "to": "scope"
+    }
+  }, {
+    "keys": ["super+b"],
+    "command": "expand_selection",
+    "args": {
+      "to": "brackets"
+    }
+  }, { 
+    "keys": ["super+shift+m"], 
+    "command": "expand_selection", 
+    "args": {"to": "brackets"} 
+  }, {
+    "keys": ["ctrl+b"],
+    "command": "move_to",
+    "args": {
+      "to": "brackets"
+    }
+  }, {
+    "keys": ["super+shift+j"],
+    "command": "expand_selection",
+    "args": {
+      "to": "indentation"
+    }
+  }, {
+    "keys": ["super+shift+a"],
+    "command": "expand_selection",
+    "args": {
+      "to": "tag"
+    }
+  }, {
+    "keys": ["super+e"],
+    "command": "find_all_under"
+  }, {
+    "keys": ["f12"],
+    "command": "edit_current_color_scheme"
+  }, {
+    "keys": ["ctrl+f"],
+    "command": "js_format",
+    "context": [{
+      "key": "selector",
+      "operator": "equal",
+      "operand": "source.js,source.json"
+    }]
+  }, {
+    "keys": ["<"],
+    "command": "insert_snippet",
+    "args": {
+      "contents": "<$0>"
+    },
+    "context": [{
+      "key": "setting.auto_match_enabled",
+      "operator": "equal",
+      "operand": true
+    }, {
+      "key": "selection_empty",
+      "operator": "equal",
+      "operand": true,
+      "match_all": true
+    }, {
+      "key": "following_text",
+      "operator": "regex_contains",
+      "operand": "^(?:\t| |\\)|]|\\}|$)",
+      "match_all": true
+    }, {
+      "key": "preceding_text",
+      "operator": "not_regex_contains",
+      "operand": "[\"a-zA-Z0-9_]$",
+      "match_all": true
+    }, {
+      "key": "eol_selector",
+      "operator": "not_equal",
+      "operand": "string.quoted.double",
+      "match_all": true
+    }, {
+      "key": "selector",
+      "operator": "equal",
+      "operand": "text.html.basic"
+    }, {
+      "key": "selector",
+      "operator": "not_equal",
+      "operand": "source.php"
+    }]
+  }, {
+    "keys": ["<"],
+    "command": "insert_snippet",
+    "args": {
+      "contents": "<${0:$SELECTION}>"
+    },
+    "context": [{
+      "key": "setting.auto_match_enabled",
+      "operator": "equal",
+      "operand": true
+    }, {
+      "key": "selection_empty",
+      "operator": "equal",
+      "operand": false,
+      "match_all": true
+    }, {
+      "key": "selector",
+      "operator": "equal",
+      "operand": "text.html.basic"
+    }, {
+      "key": "selector",
+      "operator": "not_equal",
+      "operand": "source.php"
+    }]
+  }, {
+    "keys": ["<"],
+    "command": "move",
+    "args": {
+      "by": "characters",
+      "forward": true
+    },
+    "context": [{
+      "key": "setting.auto_match_enabled",
+      "operator": "equal",
+      "operand": true
+    }, {
+      "key": "selection_empty",
+      "operator": "equal",
+      "operand": true,
+      "match_all": true
+    }, {
+      "key": "following_text",
+      "operator": "regex_contains",
+      "operand": "^<",
+      "match_all": true
+    }, {
+      "key": "selector",
+      "operator": "equal",
+      "operand": "text.html.basic"
+    }, {
+      "key": "selector",
+      "operator": "not_equal",
+      "operand": "source.php"
+    }]
+  }, {
+    "keys": [">"],
+    "command": "move",
+    "args": {
+      "by": "characters",
+      "forward": true
+    },
+    "context": [{
+      "key": "setting.auto_match_enabled",
+      "operator": "equal",
+      "operand": true
+    }, {
+      "key": "selection_empty",
+      "operator": "equal",
+      "operand": true,
+      "match_all": true
+    }, {
+      "key": "following_text",
+      "operator": "regex_contains",
+      "operand": "^>",
+      "match_all": true
+    }, {
+      "key": "selector",
+      "operator": "equal",
+      "operand": "text.html.basic"
+    }, {
+      "key": "selector",
+      "operator": "not_equal",
+      "operand": "source.php"
+    }]
+  }, {
+    "keys": ["backspace"],
+    "command": "run_macro_file",
+    "args": {
+      "file": "Packages/Default/Delete Left Right.sublime-macro"
+    },
+    "context": [{
+      "key": "setting.auto_match_enabled",
+      "operator": "equal",
+      "operand": true
+    }, {
+      "key": "selection_empty",
+      "operator": "equal",
+      "operand": true,
+      "match_all": true
+    }, {
+      "key": "preceding_text",
+      "operator": "regex_contains",
+      "operand": "<$",
+      "match_all": true
+    }, {
+      "key": "following_text",
+      "operator": "regex_contains",
+      "operand": "^>",
+      "match_all": true
+    }, {
+      "key": "selector",
+      "operator": "equal",
+      "operand": "text.html.basic"
+    }, {
+      "key": "selector",
+      "operator": "not_equal",
+      "operand": "source.php"
+    }]
+  }, {
+    "keys": ["{"],
+    "command": "insert_snippet",
+    "args": {
+      "contents": "{{$0}}"
+    },
+    "context": [{
+      "key": "setting.auto_match_enabled",
+      "operator": "equal",
+      "operand": true
+    }, {
+      "key": "selection_empty",
+      "operator": "equal",
+      "operand": true,
+      "match_all": true
+    }, {
+      "key": "following_text",
+      "operator": "regex_contains",
+      "operand": "^(?:\t| |\\)|]|\\}|$)",
+      "match_all": true
+    }, {
+      "key": "preceding_text",
+      "operator": "not_regex_contains",
+      "operand": "[\"a-zA-Z0-9_]$",
+      "match_all": true
+    }, {
+      "key": "eol_selector",
+      "operator": "not_equal",
+      "operand": "string.quoted.double",
+      "match_all": true
+    }, {
+      "key": "selector",
+      "operator": "equal",
+      "operand": "text.html.basic"
+    }, {
+      "key": "selector",
+      "operator": "not_equal",
+      "operand": "source.php"
+    }]
+  }, {
+    "keys": ["{"],
+    "command": "insert_snippet",
+    "args": {
+      "contents": "{{${0:$SELECTION}}}"
+    },
+    "context": [{
+      "key": "setting.auto_match_enabled",
+      "operator": "equal",
+      "operand": true
+    }, {
+      "key": "selection_empty",
+      "operator": "equal",
+      "operand": false,
+      "match_all": true
+    }, {
+      "key": "selector",
+      "operator": "equal",
+      "operand": "text.html.basic"
+    }, {
+      "key": "selector",
+      "operator": "not_equal",
+      "operand": "source.php"
+    }]
+  }, {
+    "keys": ["{"],
+    "command": "move",
+    "args": {
+      "by": "characters",
+      "forward": true
+    },
+    "context": [{
+      "key": "setting.auto_match_enabled",
+      "operator": "equal",
+      "operand": true
+    }, {
+      "key": "selection_empty",
+      "operator": "equal",
+      "operand": true,
+      "match_all": true
+    }, {
+      "key": "following_text",
+      "operator": "regex_contains",
+      "operand": "^{{",
+      "match_all": true
+    }, {
+      "key": "selector",
+      "operator": "equal",
+      "operand": "text.html.basic"
+    }, {
+      "key": "selector",
+      "operator": "not_equal",
+      "operand": "source.php"
+    }]
+  }, {
+    "keys": ["}"],
+    "command": "move",
+    "args": {
+      "by": "characters",
+      "forward": true
+    },
+    "context": [{
+      "key": "setting.auto_match_enabled",
+      "operator": "equal",
+      "operand": true
+    }, {
+      "key": "selection_empty",
+      "operator": "equal",
+      "operand": true,
+      "match_all": true
+    }, {
+      "key": "following_text",
+      "operator": "regex_contains",
+      "operand": "^}}",
+      "match_all": true
+    }, {
+      "key": "selector",
+      "operator": "equal",
+      "operand": "text.html.basic"
+    }, {
+      "key": "selector",
+      "operator": "not_equal",
+      "operand": "source.php"
+    }]
+  }, {
+    "keys": ["backspace"],
+    "command": "run_macro_file",
+    "args": {
+      "file": "Packages/Default/Delete Left Right.sublime-macro"
+    },
+    "context": [{
+      "key": "setting.auto_match_enabled",
+      "operator": "equal",
+      "operand": true
+    }, {
+      "key": "selection_empty",
+      "operator": "equal",
+      "operand": true,
+      "match_all": true
+    }, {
+      "key": "preceding_text",
+      "operator": "regex_contains",
+      "operand": "{{$",
+      "match_all": true
+    }, {
+      "key": "following_text",
+      "operator": "regex_contains",
+      "operand": "^}}",
+      "match_all": true
+    }, {
+      "key": "selector",
+      "operator": "equal",
+      "operand": "text.html.basic"
+    }, {
+      "key": "selector",
+      "operator": "not_equal",
+      "operand": "source.php"
+    }]
+  }
+
+]

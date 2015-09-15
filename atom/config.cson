@@ -1,0 +1,64 @@
+"*":
+  "exception-reporting":
+    userId: "687d1a45-4465-08a0-8791-e8ad6da16131"
+  welcome:
+    showOnStartup: false
+  minimap:
+    plugins:
+      pigments: true
+  core:
+    disabledPackages: [
+      "language-ruby"
+      "language-ruby-on-rails"
+      "language-sql"
+      "language-todo"
+      "language-perl"
+      "language-php"
+      "language-objective-c"
+      "language-mustache"
+      "language-hyperlink"
+      "language-csharp"
+      "language-c"
+      "language-javascript"
+      "emmet"
+      "language-javascript-better"
+    ]
+    themes: [
+      "one-dark-ui"
+      "monokai"
+    ]
+  editor:
+    fontSize: 16
+    invisibles: {}
+    fontFamily: "Menlo"
+    showIndentGuide: true
+    softWrap: true
+  "language-babel":
+    disableWhenNoBabelrcFileInPath: true
+    suppressTranspileOnSaveMessages: true
+  "save-session":
+    dataSaveFolder: "/Users/camunda/.atom/packages/save-session/projects"
+  linter: {}
+  "atom-material-ui":
+    compactTreeView: true
+    depth: true
+    panelContrast: true
+    tabSize: "Small"
+    disableAnimations: true
+  "tool-bar":
+    position: "Right"
+    visible: false
+  "atom-alignment": {}
+  "terminal-panel": {}
+  processing: {}
+  "node-debugger": {}
+  "highlight-selected":
+    hideHighlightOnSelectedWord: true
+    lightTheme: true
+    highlightBackground: true
+  "autocomplete-plus":
+    confirmCompletion: "tab"
+  emmet: {}
+  "tree-view":
+    hideVcsIgnoredFiles: true
+  "keybinding-cheatsheet": {}

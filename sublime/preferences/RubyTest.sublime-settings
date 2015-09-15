@@ -1,0 +1,5 @@
+{
+  "run_rspec_command": "export PATH=~/.rbenv/shims:$PATH; spring rspec --format=doc --format=Nc {relative_path}",
+  "run_single_rspec_command": "export PATH=~/.rbenv/shims:$PATH; spring rspec --format=doc --format=Nc {relative_path}:{line_number}",
+  "save_on_run": true
+}

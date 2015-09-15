@@ -1,0 +1,100 @@
+{
+	"alt_gr": false,
+	"atomic_save": true,
+	"auto_complete": true,
+	"auto_complete_commit_on_tab": true,
+	"auto_complete_delay": 50,
+	"auto_complete_selector": "source - comment, meta.tag - punctuation.definition.tag.begin, text.html.ruby, text.js",
+	"auto_complete_size_limit": 4194304,
+	"auto_complete_triggers":
+	[
+		{
+			"characters": "ng-controller=\"*",
+			"selector": "punctuation.definition.string"
+		},
+		{
+			"characters": "qazwsxedcrfvtgbyhnujmikolpQAZWSXEDCRFVTGBYHNUJMIKOLP",
+			"selector": "text, source, meta, string, punctuation, constant"
+		}
+	],
+	"auto_complete_with_fields": true,
+	"auto_id_class": false,
+	"auto_indent": true,
+	"bold_folder_labels": true,
+	"caret_extra_width": 1,
+	"close_windows_when_empty": true,
+	"color_scheme": "Packages/User/Color Highlighter/themes/myMonokai.tmTheme",
+	"disable_formatted_linebreak": false,
+	"disable_tab_abbreviations": false,
+	"disable_tab_abbreviations_on_auto_complete": true,
+	"drag_text": false,
+	"draw_white_space": "all",
+	"enable_emmet_keymap": true,
+	"folder_exclude_patterns":
+	[
+		".git",
+		".sass-cache",
+		"node_modules",
+		"bower_components",
+		"diagram-js/docs",
+		"bpmn-js/docs"
+	],
+	"font_face": "menlo",
+	"font_options":
+	[
+		"no_round"
+	],
+	"font_size": 16,
+	"ignored_packages":
+	[
+		"Erlang",
+		"Objective-C",
+		"CSS",
+		"OCaml",
+		"ASP",
+		"TCL",
+		"Textile",
+		"Lisp",
+		"Perl",
+		"R",
+		"Batch File",
+		"Makefile",
+		"Groovy",
+		"Pascal",
+		"D",
+		"C++",
+		"Clojure",
+		"Lua",
+		"C#",
+		"Haskell",
+		"ActionScript",
+		"XSL",
+		"Ruby",
+		"AppleScript",
+		"LaTeX",
+		"ScopeAlways",
+		"Graphviz",
+		"JsFormat",
+		"Markdown",
+		"Diff",
+		"Takana",
+		"Matlab",
+		"Java",
+		"JavaScript",
+		"Go",
+		"Scala",
+		"Shell",
+		"SQL",
+		"Vintage"
+	],
+	"margin": 4,
+	"open_files_in_new_window": false,
+	"sidebar_small": true,
+	"spell_check": false,
+	"tab_completion": true,
+	"tab_size": 2,
+	"tabs_medium": true,
+	"theme": "predawn.sublime-theme",
+	"translate_tabs_to_spaces": true,
+	"word_wrap": true
+}

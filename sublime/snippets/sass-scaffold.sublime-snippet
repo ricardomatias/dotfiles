@@ -1,0 +1,22 @@
+<snippet>
+    <content><![CDATA[
+@import "components/variables"
+
+@import "bourbon/bourbon"
+@import "base/grid-settings"
+@import "neat/neat"
+@import "base/base"
+
+@import "components/grid"
+@import "components/mixins"
+
+@import "sections/global"
+@import "sections/footer"
+@import "sections/header"
+@import "sections/main"
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>sass-scaffold</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.sass</scope>
+</snippet>
