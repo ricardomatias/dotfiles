@@ -1,0 +1,11 @@
+! Switch CMD <-> CTRL
+
+clear mod1
+
+keycode 37 = Alt_L Meta_L Alt_L Meta_L
+!keycode 92 = 
+!keycode 108 = Alt_R Meta_R
+
+add mod1 = Alt_R
+
+

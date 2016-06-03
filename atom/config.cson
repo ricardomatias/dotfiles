@@ -1,11 +1,17 @@
 "*":
-  "exception-reporting":
-    userId: "687d1a45-4465-08a0-8791-e8ad6da16131"
-  welcome:
-    showOnStartup: false
-  minimap:
-    plugins:
-      pigments: true
+  "advanced-open-file":
+    createDirectories: true
+    createFileInstantly: true
+  "atom-alignment": {}
+  "atom-material-ui":
+    compactTreeView: true
+    depth: true
+    disableAnimations: true
+    panelContrast: true
+    tabSize: "Small"
+  "autocomplete-plus":
+    confirmCompletion: "tab"
+  autosave: {}
   core:
     disabledPackages: [
       "language-ruby"
@@ -20,45 +26,109 @@
       "language-csharp"
       "language-c"
       "language-javascript"
-      "emmet"
       "language-javascript-better"
+      "pigments"
+      "atom-chai-snippets"
+      "keyboard-localization"
+      "linter-scss-lint"
+      "color-picker"
+      "react"
+      "linter-htmlhint"
+      "save-session"
+      "autoclose-html"
+    ]
+    openEmptyEditorOnStart: false
+    packagesWithKeymapsDisabled: [
+      "turbo-javascript"
+      "git-diff"
+      "linter-htmlhint"
+      "linter"
     ]
     themes: [
       "one-dark-ui"
       "monokai"
     ]
+  docblockr:
+    auto_add_method_tag: true
+    short_primitives: true
+    spacer_between_sections: true
   editor:
-    fontSize: 16
     invisibles: {}
-    fontFamily: "Menlo"
+    preferredLineLength: 120
     showIndentGuide: true
     softWrap: true
+    tabType: "soft"
+    zoomFontWhenCtrlScrolling: false
+  emmet: {}
+  "exception-reporting":
+    userId: "687d1a45-4465-08a0-8791-e8ad6da16131"
+  "fuzzy-finder": {}
+  "git-diff":
+    showIconsInEditorGutter: true
+  "git-history": {}
+  hidpi:
+    scaleFactor: 1.75
+    updateOnResize: false
+  "highlight-selected":
+    hideHighlightOnSelectedWord: true
+    highlightBackground: true
+    lightTheme: true
+  "keybinding-cheatsheet": {}
+  "keyboard-localization":
+    useKeyboardLayout: "nb_NO"
+    useKeyboardLayoutFromPath: "blah"
   "language-babel":
     disableWhenNoBabelrcFileInPath: true
     suppressTranspileOnSaveMessages: true
+  linter:
+    showErrorPanel: false
+  "linter-eslint":
+    disableWhenNoEslintrcFileInPath: true
+    globalNodePath: "/home/ricardo/.nvm/versions/node/v6.2.0"
+    useGlobalEslint: true
+  "linter-htmlhint": {}
+  "linter-jshint":
+    disableWhenNoJshintrcFileInPath: true
+    executablePath: "/home/ricardo/.nvm/versions/node/v6.2.0/bin/jshint"
+    lintInlineJavaScript: true
+    lintJSXFiles: true
+  "linter-pylint":
+    executable: "/usr/bin/pylint2"
+    pythonPath: "/usr/bin/python2"
+  minimap:
+    plugins:
+      "git-diff": true
+      "git-diffDecorationsZIndex": 0
+      pigments: true
+  "node-debugger": {}
+  processing: {}
+  "project-folder":
+    projectRootDirectories: [
+      "/home/ricardo/Projects/bpmn.io"
+      "/home/ricardo/Projects/Open\\ Source/"
+    ]
+  react:
+    enabledForAllJavascriptFiles: true
   "save-session":
-    dataSaveFolder: "/Users/camunda/.atom/packages/save-session/projects"
-  linter: {}
-  "atom-material-ui":
-    compactTreeView: true
-    depth: true
-    panelContrast: true
-    tabSize: "Small"
-    disableAnimations: true
+    dataSaveFolder: "/home/ricardo/.atom/projects"
+    skipSavePrompt: false
+  "terminal-panel": {}
   "tool-bar":
     position: "Right"
     visible: false
-  "atom-alignment": {}
-  "terminal-panel": {}
-  processing: {}
-  "node-debugger": {}
-  "highlight-selected":
-    hideHighlightOnSelectedWord: true
-    lightTheme: true
-    highlightBackground: true
-  "autocomplete-plus":
-    confirmCompletion: "tab"
-  emmet: {}
-  "tree-view":
-    hideVcsIgnoredFiles: true
-  "keybinding-cheatsheet": {}
+  "tree-view": {}
+  "tree-view-git-status": {}
+  welcome:
+    showOnStartup: false
+".basic.html.text":
+  editor:
+    preferredLineLength: 120
+".coffee.jsx.source":
+  editor:
+    preferredLineLength: 120
+".js.jsx.source":
+  editor:
+    preferredLineLength: 120
+".source.supercollider":
+  editor:
+    preferredLineLength: 120

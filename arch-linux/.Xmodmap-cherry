@@ -1,0 +1,13 @@
+! Switch CMD <-> CTRL
+
+clear mod1
+
+keycode 108 = Control_R NoSymbol Control_R
+
+keysym Print = F13
+keysym Scroll_Lock = F14
+keysym Pause = F15
+
+add mod1 = Alt_L
+
+
