@@ -24,7 +24,6 @@
       "language-mustache"
       "language-hyperlink"
       "language-csharp"
-      "language-c"
       "language-javascript"
       "language-javascript-better"
       "pigments"
@@ -36,6 +35,7 @@
       "linter-htmlhint"
       "save-session"
       "autoclose-html"
+      "linter-glsl"
     ]
     openEmptyEditorOnStart: false
     packagesWithKeymapsDisabled: [
@@ -44,20 +44,17 @@
       "linter-htmlhint"
       "linter"
     ]
-    themes: [
-      "one-dark-ui"
-      "monokai"
-    ]
+    telemetryConsent: "no"
   docblockr:
     auto_add_method_tag: true
     short_primitives: true
     spacer_between_sections: true
   editor:
+    fontSize: 13
     invisibles: {}
     preferredLineLength: 120
     showIndentGuide: true
     softWrap: true
-    tabType: "soft"
     zoomFontWhenCtrlScrolling: false
   emmet: {}
   "exception-reporting":
@@ -83,13 +80,16 @@
   linter:
     showErrorPanel: false
   "linter-eslint":
-    disableWhenNoEslintrcFileInPath: true
-    globalNodePath: "/home/ricardo/.nvm/versions/node/v6.2.0"
+    disableWhenNoEslintrcFileInPath: false
+    globalNodePath: "/Users/camunda/.nvm/versions/node/v7.3.0"
     useGlobalEslint: true
+  "linter-glsl":
+    glslangValidatorPath: "/usr/local/bin/glslangValidator"
+    linkSimilarShaders: true
   "linter-htmlhint": {}
   "linter-jshint":
     disableWhenNoJshintrcFileInPath: true
-    executablePath: "/home/ricardo/.nvm/versions/node/v6.2.0/bin/jshint"
+    executablePath: "/home/ricardo/.nvm/versions/node/v6.9.2/bin/jshint"
     lintInlineJavaScript: true
     lintJSXFiles: true
   "linter-pylint":

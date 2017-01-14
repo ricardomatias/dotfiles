@@ -7,14 +7,11 @@ alias ldot='ls -dFh .*'
 # Use with caution
 #
 
-alias e="/usr/local/bin/emacsclient -ct"
-alias emacs-start="/usr/local/bin/emacs --daemon"
-alias zshrc='emacs ~/.zshrc' # Quick access to the ~/.zshrc file
-alias my_aliases='cd ~/.oh-my-zsh/custom/ && emacs my_patches.zsh && cd -'
-alias mongo_bgstart='mongod --dbpath /path/to/my/mongodata --fork --logpath /path/to/my/mongod.log'
-alias pg_start='postgres -D /usr/local/pgsql/data >logfile 2>&1 &'
+alias zshrc='atom ~/.zshrc' # Quick access to the ~/.zshrc file
+alias my_aliases='cd ~/.oh-my-zsh/custom/ && atom my_patches.zsh && cd -'
 
 # BPMN.io
+alias guab='grunt auto-build'
 alias atest='grunt auto-test'
 alias tst='grunt test'
 alias set_chromium='export CHROME_BIN="/Applications/Chromium.app/Contents/MacOS/Chromium"'
