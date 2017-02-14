@@ -3,16 +3,35 @@
     createDirectories: true
     createFileInstantly: true
   "atom-alignment": {}
+  "atom-clock":
+    dateFormat: "MMMM Do, dddd, H:mm ▲"
   "atom-material-ui":
     compactTreeView: true
     depth: true
     disableAnimations: true
     panelContrast: true
     tabSize: "Small"
+  "atom-react-native-autocomplete": {}
   "autocomplete-plus":
     confirmCompletion: "tab"
   autosave: {}
   core:
+    customFileTypes:
+      "source.ini": [
+        ".buckconfig"
+        ".hgrc"
+      ]
+      "source.json": [
+        ".eslintrc"
+        ".arcconfig"
+        "BUCK.autodeps"
+      ]
+      "source.python": [
+        "BUCK"
+      ]
+      "source.xml": [
+        ".plist"
+      ]
     disabledPackages: [
       "language-ruby"
       "language-ruby-on-rails"
@@ -26,16 +45,10 @@
       "language-csharp"
       "language-javascript"
       "language-javascript-better"
-      "pigments"
-      "atom-chai-snippets"
       "keyboard-localization"
-      "linter-scss-lint"
       "color-picker"
       "react"
       "linter-htmlhint"
-      "save-session"
-      "autoclose-html"
-      "linter-glsl"
     ]
     openEmptyEditorOnStart: false
     packagesWithKeymapsDisabled: [
@@ -45,6 +58,10 @@
       "linter"
     ]
     telemetryConsent: "no"
+    themes: [
+      "one-dark-ui"
+      "monokai"
+    ]
   docblockr:
     auto_add_method_tag: true
     short_primitives: true
@@ -55,10 +72,12 @@
     preferredLineLength: 120
     showIndentGuide: true
     softWrap: true
+    softWrapAtPreferredLineLength: true
     zoomFontWhenCtrlScrolling: false
   emmet: {}
   "exception-reporting":
     userId: "687d1a45-4465-08a0-8791-e8ad6da16131"
+  "flex-tool-bar": {}
   "fuzzy-finder": {}
   "git-diff":
     showIconsInEditorGutter: true
@@ -78,7 +97,7 @@
     disableWhenNoBabelrcFileInPath: true
     suppressTranspileOnSaveMessages: true
   linter:
-    showErrorPanel: false
+    errorPanelHeight: 24
   "linter-eslint":
     disableWhenNoEslintrcFileInPath: false
     globalNodePath: "/Users/camunda/.nvm/versions/node/v7.3.0"
@@ -101,6 +120,8 @@
       "git-diffDecorationsZIndex": 0
       pigments: true
   "node-debugger": {}
+  nuclide:
+    "nuclide-working-sets": {}
   processing: {}
   "project-folder":
     projectRootDirectories: [

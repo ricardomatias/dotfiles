@@ -1149,9 +1149,9 @@
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>412 363 620 392 0 0 1440 877 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>269 138 796 473 0 0 1440 877 </string>
+	<string>269 172 1018 447 0 0 1440 900 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>579 323 650 427 0 0 1440 877 </string>
+	<string>310 213 650 427 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>176 70 650 427 0 0 1440 877 </string>
 	<key>NeverWarnAboutShortLivedSessions_EE8B371A-BB85-4D96-AFC1-DA99217FD299</key>
@@ -2689,7 +2689,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2017-01-14T10:22:36Z</date>
+	<date>2017-01-29T16:36:00Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>ShowBookmarkName</key>
@@ -2697,7 +2697,7 @@
 	<key>ShowPaneTitles</key>
 	<true/>
 	<key>SmartPlacement</key>
-	<false/>
+	<true/>
 	<key>SplitPaneDimmingAmount</key>
 	<real>0.34203726053237915</real>
 	<key>SwitchTabModifier</key>

@@ -1,7 +1,7 @@
+[core]
+	editor = subl -n -w
 [user]
 	name = Ricardo Matias
-	email = ricardo.matias0gmail.com
-[core]
-	editor = subl -w
+	email = ricardo.matias0@gmail.com
 [push]
-	default = simple
+	default = matching
