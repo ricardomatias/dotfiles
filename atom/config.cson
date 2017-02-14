@@ -13,6 +13,12 @@
     confirmCompletion: "tab"
   autosave: {}
   core:
+    customFileTypes:
+      "text.xml": [
+        "bpmn"
+        "dmn"
+        "cmmn"
+      ]
     disabledPackages: [
       "language-ruby"
       "language-ruby-on-rails"
@@ -29,7 +35,6 @@
       "language-javascript-better"
       "pigments"
       "atom-chai-snippets"
-      "keyboard-localization"
       "linter-scss-lint"
       "color-picker"
       "react"
@@ -44,6 +49,7 @@
       "linter-htmlhint"
       "linter"
     ]
+    telemetryConsent: "no"
     themes: [
       "one-dark-ui"
       "monokai"
@@ -53,6 +59,7 @@
     short_primitives: true
     spacer_between_sections: true
   editor:
+    atomicSoftTabs: false
     invisibles: {}
     preferredLineLength: 120
     showIndentGuide: true
@@ -63,6 +70,8 @@
   "exception-reporting":
     userId: "687d1a45-4465-08a0-8791-e8ad6da16131"
   "fuzzy-finder": {}
+  "git-control":
+    showGitFlowButton: false
   "git-diff":
     showIconsInEditorGutter: true
   "git-history": {}
@@ -76,20 +85,20 @@
   "keybinding-cheatsheet": {}
   "keyboard-localization":
     useKeyboardLayout: "nb_NO"
-    useKeyboardLayoutFromPath: "blah"
+    useKeyboardLayoutFromPath: "/home/ricardo/.atom/pt_mac.json"
   "language-babel":
     disableWhenNoBabelrcFileInPath: true
     suppressTranspileOnSaveMessages: true
   linter:
-    showErrorPanel: false
+    errorPanelHeight: 24
   "linter-eslint":
     disableWhenNoEslintrcFileInPath: true
-    globalNodePath: "/home/ricardo/.nvm/versions/node/v6.2.0"
+    globalNodePath: "/home/ricardo/.nvm/versions/node/v7.2.0"
     useGlobalEslint: true
   "linter-htmlhint": {}
   "linter-jshint":
     disableWhenNoJshintrcFileInPath: true
-    executablePath: "/home/ricardo/.nvm/versions/node/v6.2.0/bin/jshint"
+    executablePath: "/home/ricardo/.nvm/versions/node/v6.9.0/bin/jshint"
     lintInlineJavaScript: true
     lintJSXFiles: true
   "linter-pylint":
@@ -112,6 +121,7 @@
   "save-session":
     dataSaveFolder: "/home/ricardo/.atom/projects"
     skipSavePrompt: false
+  tabs: {}
   "terminal-panel": {}
   "tool-bar":
     position: "Right"
@@ -124,6 +134,24 @@
   editor:
     preferredLineLength: 120
 ".coffee.jsx.source":
+  editor:
+    preferredLineLength: 120
+".git-commit.text":
+  editor:
+    preferredLineLength: 120
+".git-config.source":
+  editor:
+    preferredLineLength: 120
+".git-rebase.text":
+  editor:
+    preferredLineLength: 120
+".go.source":
+  editor:
+    preferredLineLength: 120
+".gohtml.html.text":
+  editor:
+    preferredLineLength: 120
+".gotemplate.source":
   editor:
     preferredLineLength: 120
 ".js.jsx.source":

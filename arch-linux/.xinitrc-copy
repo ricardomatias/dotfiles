@@ -18,15 +18,16 @@ fi
 urxvtd -q -o -f
 
 # fix clip boards
-autocutsel -fork -selection PRIMARY &
+autocutsel -fork &
+#autocutsel -selection PRIMARY
 
 # screen lock integration
-xss-lock -- i3lock &
+# xss-lock -- i3lock &
 
 # touchpad fix
 if type synclient >/dev/null 2>&1; then
- synclient HorizTwoFingerScroll=1 &
- synclient TapButton2=3 &
+  synclient HorizTwoFingerScroll=1 &
+  synclient TapButton2=3 &
 fi
 
 # Keyboard delay & rate
@@ -37,12 +38,6 @@ xrandr --dpi 200
 
 # set keyboard
 xmodmap ~/.Xmodmap
-
-# set notification daemon
-#dunst -config ~/.config/dunst/dunstrc
-
-# start audio daemon
-#pulseaudio --start
 
 # exec window manager (i3)
 exec i3 -V -d all > ~/.i3/log/debug.log 2>&1

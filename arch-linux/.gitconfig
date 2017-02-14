@@ -1,0 +1,7 @@
+[user]
+	name = Ricardo Matias
+	email = ricardo.matias0gmail.com
+[core]
+	editor = subl -w
+[push]
+	default = simple

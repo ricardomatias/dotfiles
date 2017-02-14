@@ -35,7 +35,7 @@ bindsym $mod+Return exec i3-sensible-terminal
 # kill focused window
 bindsym $mod+Shift+w kill
 
-# start dmenu (a program launcher)
+# start rofi (a program launcher)
 bindsym $mod+space exec rofi -show run
 bindsym $mod+Shift+space exec rofi -show window
 
@@ -200,12 +200,17 @@ bindsym $mod+l exec i3lock -n
 bindsym $mod+z workspace back_and_forth
 bindsym $mod+Shift+z move container to workspace back_and_forth; workspace back_and_forth
 
+# play
+bindsym XF86AudioMute exec playerctl play-pause && killall -SIGUSR1 i3status
+bindsym XF86AudioNext exec playerctl next && killall -SIGUSR1 i3status
+bindsym XF86AudioPrev exec playerctl previous && killall -SIGUSR1 i3status
+
 # volume control
-bindsym XF86AudioMute exec amixer -q set Master toggle && killall -SIGUSR1 i3status
+bindsym XF86AudioPlay exec amixer -q set Master toggle && killall -SIGUSR1 i3status
 bindsym XF86AudioLowerVolume exec --no-startup-id amixer -q set Master 2dB- unmute && killall -SIGUSR1 i3status
 bindsym XF86AudioRaiseVolume exec --no-startup-id amixer -q set Master 2dB+ unmute && killall -SIGUSR1 i3status
 
-# volume control
+# volume control (cherry)
 bindsym F13 exec amixer -q set Master toggle && killall -SIGUSR1 i3status
 bindsym F14 exec --no-startup-id amixer -q set Master 2dB- unmute && killall -SIGUSR1 i3status
 bindsym F15 exec --no-startup-id amixer -q set Master 2dB+ unmute && killall -SIGUSR1 i3status
@@ -213,7 +218,6 @@ bindsym F15 exec --no-startup-id amixer -q set Master 2dB+ unmute && killall -SI
 # brightness control
 bindsym XF86MonBrightnessUp exec "xbacklight -inc 2.5"
 bindsym XF86MonBrightnessDown exec "xbacklight -dec 2.5"
-
 
 bindsym XF86KbdBrightnessUp exec "kbdlight up 5"
 bindsym XF86KbdBrightnessDown exec "kbdlight down 5"
@@ -255,7 +259,7 @@ bindsym $mod+Shift+x debuglog toggle
 assign [class="chromium"] 4: browser
 assign [class="vivaldi-preview"] 4: browser
 assign [class="google-chrome"] 3: test
-assign [instance="Karma - Google Chrome"] 3: test
+assign [title="Karma - Chromium"] 3: test
 
 # firefox karma
 assign [instance="Karma - Mozilla Firefox"] 3: test
@@ -266,7 +270,7 @@ assign [class="Sublime"] 2: editor
 
 # Apps
 assign [title="VLC media player"] 5: media
-assign [class="spotify"] 5: media
+assign [instance="spotify"] 5: media
 assign [class="Gimp"] 6: graphics
 
 # Electron
