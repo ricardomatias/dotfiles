@@ -48,7 +48,6 @@
       "keyboard-localization"
       "color-picker"
       "react"
-      "linter-htmlhint"
     ]
     openEmptyEditorOnStart: false
     packagesWithKeymapsDisabled: [
@@ -67,9 +66,8 @@
     short_primitives: true
     spacer_between_sections: true
   editor:
-    fontSize: 13
     invisibles: {}
-    preferredLineLength: 120
+    preferredLineLength: 160
     showIndentGuide: true
     softWrap: true
     softWrapAtPreferredLineLength: true
@@ -96,12 +94,10 @@
   "language-babel":
     disableWhenNoBabelrcFileInPath: true
     suppressTranspileOnSaveMessages: true
-  linter:
-    errorPanelHeight: 24
+  linter: {}
   "linter-eslint":
     disableWhenNoEslintrcFileInPath: false
-    globalNodePath: "/Users/camunda/.nvm/versions/node/v7.3.0"
-    useGlobalEslint: true
+    globalNodePath: "/Users/ricardomatias/.nvm/versions/node/v7.6.0"
   "linter-glsl":
     glslangValidatorPath: "/usr/local/bin/glslangValidator"
     linkSimilarShaders: true
@@ -114,6 +110,8 @@
   "linter-pylint":
     executable: "/usr/bin/pylint2"
     pythonPath: "/usr/bin/python2"
+  "linter-ui-default":
+    panelHeight: 388
   minimap:
     plugins:
       "git-diff": true
@@ -133,6 +131,8 @@
   "save-session":
     dataSaveFolder: "/home/ricardo/.atom/projects"
     skipSavePrompt: false
+  tabs:
+    enableMruTabSwitching: false
   "terminal-panel": {}
   "tool-bar":
     position: "Right"

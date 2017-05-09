@@ -23,13 +23,13 @@ HIST_STAMPS="dd/mm/yyyy"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git alias-tips sublime-text gitignore brew osx brew-cask bower npm ssh-agent zsh-syntax-highlighting)
+plugins=(git alias-tips sublime-text gitignore brew osx brew-cask bower npm ssh-agent zsh-syntax-highlighting z)
 
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-export PATH=$HOME/bin:usr/local/bin:usr/bin:$PATH:/usr/local/opt/gems/bin
+export PATH=$HOME/bin:usr/local/bin:usr/bin:$PATH
 
 # You may need to manually set your language environment
 export LANG=en_US.UTF-8
@@ -41,24 +41,19 @@ export LANG=en_US.UTF-8
    export EDITOR='subl -w'
  fi
 
-export RBENV_ROOT="$(brew --prefix rbenv)"
-export GEM_HOME="$(brew --prefix)/opt/gems"
-export GEM_PATH="$(brew --prefix)/opt/gems"
-export PATH="$(brew --prefix sqlite)/bin:$PATH"
-export PATH="$(brew --prefix make)/bin:$PATH"
-export PATH="$(brew --prefix jq)/bin:$PATH"
-export PATH="$(brew --prefix unzip)/bin:$PATH"
-export PATH="$(brew --prefix curl)/bin:$PATH"
+
+export PATH="/usr/local/opt/curl/bin:$PATH"
 export PATH="/usr/local/opt/gnu-sed/libexec/gnubin:$PATH"
 export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
 . `brew --prefix`/etc/profile.d/z.sh
 
-export ANDROID_HOME=~/Library/Android/sdk
-export PATH=${PATH}:${ANDROID_HOME}/tools
-export PATH=${PATH}:${ANDROID_HOME}/platform-tools
+# export ANDROID_HOME=~/Library/Android/sdk
+# export PATH=${PATH}:${ANDROID_HOME}/tools
+# export PATH=${PATH}:${ANDROID_HOME}/platform-tools
 
-# sed manual
-MANPATH="/usr/local/opt/gnu-sed/libexec/gnuman:$MANPATH"
+# manuals
+export MANPATH="/usr/local/opt/gnu-sed/libexec/gnuman:$MANPATH"
+export MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
 
 # Test Browsers
 export TEST_BROWSERS="Chrome"
@@ -72,5 +67,5 @@ zstyle :omz:plugins:ssh-agent identities github
 
 AUTO_CD=true
 
+ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern cursor line)
 # Highlight
-# ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern cursor line)
