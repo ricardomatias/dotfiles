@@ -1,5 +1,0 @@
-{
-    "js_completions": [
-["module\tAngularJS", "angular.module('$1', [$2]).$0"]
-]
-}

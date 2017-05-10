@@ -1,6 +1,0 @@
-#!/bin/bash
-
-nvm=$(which nvm)
-# old_node=$(nvm ls | grep default | head -n 1 | cut -d " " -f 3)
-
-$($nvm ls)
