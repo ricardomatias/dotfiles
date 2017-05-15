@@ -1,0 +1,15 @@
+[HTML Settings]
+AutomaticDetectionLanguage=1
+
+[MainWindow]
+Height 1080=1015
+State=AAAA/wAAAAD9AAAAAAAAB4AAAAOrAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAA
+ToolBarsMovable=Disabled
+Width 1920=1920
+Window-Maximized 1080x1920=true
+
+[MainWindowState]
+Splitter=560,1359
+
+[Search]
+ScopeSelection=0

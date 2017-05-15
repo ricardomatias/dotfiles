@@ -1,0 +1,32 @@
+[Containments][53][General]
+AppletOrder=54;55;56;57;59
+
+[InteractiveConsole]
+Geometry=\x01ÙÐË\x00\x02\x00\x00\x00\x00\x03½\x00\x00\x00$\x00\x00\x07\x00\x00\x047\x00\x00\x03À\x00\x00\x00M\x00\x00\x07|\x00\x00\x047\x00\x00\x00\x00\x00\x00\x00\x00\x07€
+SplitterState=\x00\x00\x00ÿ\x00\x00\x00\x01\x00\x00\x00\x02\x00\x00\x07b\x00\x00\x01\x16\x01ÿÿÿÿ\x01\x00\x00\x00\x02\x00
+
+[Notification Messages]
+ConfirmTrash=true
+
+[PlasmaRunnerManager]
+LaunchCounts=1 services_atom.desktop,1 services_org.kde.konsole.desktop
+pluginWhiteList=services,places,shell,bookmarks,recentdocuments,locations,baloosearch
+
+[PlasmaViews][Panel 2]
+alignment=132
+panelVisibility=0
+
+[PlasmaViews][Panel 2][Horizontal1920]
+maxLength=1920
+minLength=1920
+offset=0
+thickness=36
+
+[PlasmaViews][Panel 53][Horizontal1920]
+thickness=48
+
+[ScreenConnectors]
+0=eDP-1
+
+[Updates]
+performed=/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/obsolete_kickoffrc.js

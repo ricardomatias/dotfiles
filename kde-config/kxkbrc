@@ -1,0 +1,13 @@
+[Layout]
+DisplayNames=
+LayoutList=pt(mac_sundeadkeys)
+LayoutLoopCount=-1
+Model=thinkpad60
+Options=ctrl:swap_lalt_lctl
+ResetOldOptions=true
+ShowFlag=false
+ShowLabel=true
+ShowLayoutIndicator=true
+ShowSingle=true
+SwitchMode=Global
+Use=true
