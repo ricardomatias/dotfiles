@@ -1,20 +1,5 @@
-[KSharedDataCache]
+[systemsettings]
 InfoOutput=4
 
-[kdecore (KConfigSkeleton)]
-InfoOutput=2
-
-[kdialog]
+[unnamed app]
 InfoOutput=4
-
-[keditbookmarks]
-InfoOutput=4
-
-[kio (delegateanimationhandler)]
-InfoOutput=4
-
-[kio_trash]
-InfoOutput=4
-
-[kstart]
-InfoOutput=2

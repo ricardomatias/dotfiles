@@ -2,4 +2,3 @@
 LocalZone=Europe/Berlin
 ZoneinfoDir=/usr/share/zoneinfo
 Zonetab=/usr/share/zoneinfo/zone.tab
-ZonetabCache=

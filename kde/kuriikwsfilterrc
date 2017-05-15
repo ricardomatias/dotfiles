@@ -1,2 +1,6 @@
-[$Version]
-update_info=kuriikwsfilter.upd:post-kde3.1/cvs,kuriikwsfilter.upd:pre-kde4.9
+[General]
+DefaultWebShortcut=
+EnableWebShortcuts=true
+KeywordDelimiter=:
+PreferredWebShortcuts=leo,google,wikit,yahoo,youtube,wikipedia
+UsePreferredWebShortcutsOnly=false
