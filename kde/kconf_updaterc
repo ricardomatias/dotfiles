@@ -21,32 +21,32 @@ done=kate2.4
 mtime=1414354675
 
 [kcookiescfg.upd]
-ctime=1494155166
+ctime=1494587698
 done=kde2.2/b1,kde3.1/cvs,kde4.10/git
 mtime=1488622505
 
 [kded.upd]
-ctime=1494155166
+ctime=1494587698
 done=kde3.0
 mtime=1488622505
 
 [kdeui.upd]
-ctime=1494155166
+ctime=1494587697
 done=kde4/migrate_from_kde3_icon_theme
-mtime=1489181131
+mtime=1494410952
 
 [kio_help.upd]
-ctime=1494155166
+ctime=1494587700
 done=kde3_2
 mtime=1488622505
 
 [kioslave.upd]
-ctime=1494155166
+ctime=1494587698
 done=kde2.2/r2,kde2.2/r3
 mtime=1488622505
 
 [ksslcertificatemanager.upd]
-ctime=1494155166
+ctime=1494587698
 done=kde4.2
 mtime=1488622505
 

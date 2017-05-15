@@ -36,6 +36,10 @@ alias chrome="/usr/bin/google-chrome-stable"
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" # This loads nvm
 
+# Enable BASE X11 settings
+#xrandr --output eDP-1 --brightness 0.5
+
+#xrdb -merge /home/ricardo/.Xresources
 
 # FINAL STEP
 source $ZSH/oh-my-zsh.sh

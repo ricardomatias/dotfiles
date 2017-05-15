@@ -1,0 +1,161 @@
+"*":
+  "advanced-open-file":
+    createDirectories: true
+    createFileInstantly: true
+  "atom-alignment": {}
+  "atom-clock":
+    dateFormat: "MMMM Do, dddd, H:mm ▲"
+  "atom-material-ui":
+    compactTreeView: true
+    depth: true
+    disableAnimations: true
+    panelContrast: true
+    tabSize: "Small"
+  "atom-react-native-autocomplete": {}
+  "autocomplete-plus":
+    confirmCompletion: "tab"
+  autosave: {}
+  core:
+    customFileTypes:
+      "source.ini": [
+        ".buckconfig"
+        ".hgrc"
+      ]
+      "source.json": [
+        ".eslintrc"
+        ".arcconfig"
+        "BUCK.autodeps"
+      ]
+      "source.python": [
+        "BUCK"
+      ]
+      "source.xml": [
+        ".plist"
+      ]
+    disabledPackages: [
+      "language-ruby"
+      "language-ruby-on-rails"
+      "language-sql"
+      "language-todo"
+      "language-perl"
+      "language-php"
+      "language-objective-c"
+      "language-mustache"
+      "language-hyperlink"
+      "language-csharp"
+      "language-javascript"
+      "language-javascript-better"
+      "keyboard-localization"
+      "color-picker"
+      "react"
+    ]
+    openEmptyEditorOnStart: false
+    packagesWithKeymapsDisabled: [
+      "turbo-javascript"
+      "git-diff"
+      "linter-htmlhint"
+      "linter"
+    ]
+    telemetryConsent: "no"
+    themes: [
+      "one-dark-ui"
+      "monokai"
+    ]
+  docblockr:
+    auto_add_method_tag: true
+    short_primitives: true
+    spacer_between_sections: true
+  editor:
+    fontFamily: "Hack"
+    fontSize: 13
+    invisibles: {}
+    preferredLineLength: 160
+    showIndentGuide: true
+    softWrap: true
+    softWrapAtPreferredLineLength: true
+    zoomFontWhenCtrlScrolling: false
+  emmet: {}
+  "exception-reporting":
+    userId: "687d1a45-4465-08a0-8791-e8ad6da16131"
+  "flex-tool-bar": {}
+  "fuzzy-finder": {}
+  "git-diff":
+    showIconsInEditorGutter: true
+  "git-history": {}
+  hidpi: {}
+  "highlight-selected":
+    hideHighlightOnSelectedWord: true
+    highlightBackground: true
+    lightTheme: true
+  "keybinding-cheatsheet": {}
+  "keyboard-localization":
+    useKeyboardLayout: "nb_NO"
+    useKeyboardLayoutFromPath: "blah"
+  "language-babel":
+    disableWhenNoBabelrcFileInPath: true
+    suppressTranspileOnSaveMessages: true
+  linter: {}
+  "linter-eslint":
+    disableWhenNoEslintrcFileInPath: true
+    globalNodePath: "/home/ricardo/.nvm/versions/node/v7.10.0"
+    showRuleIdInMessage: false
+    useGlobalEslint: true
+  "linter-glsl":
+    glslangValidatorPath: "/usr/local/bin/glslangValidator"
+    linkSimilarShaders: true
+  "linter-htmlhint": {}
+  "linter-jshint":
+    disableWhenNoJshintrcFileInPath: true
+    executablePath: "/home/ricardo/.nvm/versions/node/v6.9.2/bin/jshint"
+    lintInlineJavaScript: true
+    lintJSXFiles: true
+  "linter-pylint":
+    executable: "/usr/bin/pylint2"
+    pythonPath: "/usr/bin/python2"
+  "linter-ui-default":
+    panelHeight: 388
+  minimap:
+    plugins:
+      "git-diff": true
+      "git-diffDecorationsZIndex": 0
+      pigments: true
+  "node-debugger": {}
+  nuclide:
+    "nuclide-working-sets": {}
+  "one-dark-ui":
+    fontSize: 12
+    layoutMode: "Compact"
+    tabSizing: "Even"
+  processing: {}
+  "project-folder":
+    projectRootDirectories: [
+      "/home/ricardo/Projects/bpmn.io"
+      "/home/ricardo/Projects/Open\\ Source/"
+    ]
+  react:
+    enabledForAllJavascriptFiles: true
+  "save-session":
+    dataSaveFolder: "/home/ricardo/.atom/projects"
+    skipSavePrompt: false
+  tabs:
+    enableMruTabSwitching: false
+  "terminal-panel": {}
+  "tool-bar":
+    position: "Right"
+    visible: false
+  "tree-view": {}
+  "tree-view-git-status": {}
+  welcome:
+    showOnStartup: false
+".basic.html.text":
+  editor:
+    preferredLineLength: 120
+".coffee.jsx.source":
+  editor:
+    preferredLineLength: 120
+".js.jsx.source":
+  editor:
+    preferredLineLength: 120
+".source.supercollider":
+  editor:
+    preferredLineLength: 120
