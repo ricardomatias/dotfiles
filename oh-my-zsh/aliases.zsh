@@ -3,10 +3,6 @@ alias l='ls -Fh'
 alias la='ls -aFh'
 alias ldot='ls -dFh .*'
 
-# Advanced Aliases.
-# Use with caution
-#
-
 # Docs
 alias docs_xkb="less /usr/share/X11/xkb/rules/base.lst"
 
@@ -52,6 +48,7 @@ alias gl='git log --graph --full-history --all --color --pretty=tformat:"%x1b[31
 
 function simple_server() {
  echo "Starting a simple Python server on port 8080.."
+
  python -m SimpleHTTPServer 8080
 }
 
@@ -72,18 +69,6 @@ function multiple_home() {
 
   echo "Setting up Macbook Monitor.."
   xrandr --output eDP1 --scale 1x1 --pos 3840x0
-
-  echo "Done"
-}
-
-function multiple_work() {
-  if [ "$1" -eq "3" ]; then
-    echo "Setting up Three way setup .."
-    xrandr --output eDP1 --mode 2880x1800 --scale 1x1 --pos -2880x0 --output HDMI1 --mode 1920x1080 --scale 1.75x1.75 --pos 0x0 --output HDMI3 --mode 1920x1080 --scale 1.75x1.75 --pos 3360x0
-  else
-    echo "Setting up Two way setup .."
-    xrandr --output HDMI3 --mode 1920x1080 --pos 3360x0 --scale 1.75x1.75 --output eDP1 --mode 2880x1800 --scale 1x1 --pos 0x0
-  fi
 
   echo "Done"
 }
@@ -142,3 +127,18 @@ function pomodoro {
     fi
   fi
 }
+
+
+function restart-plasma() {
+  killall plasmashell
+  kstart5 plasmashell > /dev/null 2>&1 & disown
+}
+
+# Set Chromium as default browser
+#gvfs-mime --set x-scheme-handler/http chromium-browser.desktop
+#gvfs-mime --set x-scheme-handler/https chromium-browser.desktop
+
+# or
+
+#xdg-mime default chromium-browser.desktop x-scheme-handler/http
+#xdg-mime default chromium-browswer.desktop x-scheme-handler/https
