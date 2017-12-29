@@ -12,10 +12,12 @@
     panelContrast: true
     tabSize: "Small"
   "atom-react-native-autocomplete": {}
+  "autocomplete-paths": {}
   "autocomplete-plus":
     confirmCompletion: "tab"
   autosave: {}
   core:
+    autoHideMenuBar: true
     customFileTypes:
       "source.ini": [
         ".buckconfig"
@@ -28,6 +30,9 @@
       ]
       "source.python": [
         "BUCK"
+      ]
+      "source.shell": [
+        ".conf"
       ]
       "source.xml": [
         ".plist"
@@ -48,13 +53,29 @@
       "keyboard-localization"
       "color-picker"
       "react"
+      "notebook"
+      "autocomplete-paths"
+      "turbo-javascript"
+    ]
+    ignoredNames: [
+      ".git"
+      ".hg"
+      ".svn"
+      ".DS_Store"
+      "._*"
+      "Thumbs.db"
+      "desktop.ini"
+      ".next"
+      "node_modules"
+      "dist"
     ]
     openEmptyEditorOnStart: false
     packagesWithKeymapsDisabled: [
-      "turbo-javascript"
       "git-diff"
       "linter-htmlhint"
       "linter"
+      "notebook"
+      "github"
     ]
     telemetryConsent: "no"
     themes: [
@@ -64,7 +85,6 @@
   docblockr:
     auto_add_method_tag: true
     short_primitives: true
-    spacer_between_sections: true
   editor:
     fontFamily: "Hack"
     fontSize: 13
@@ -82,11 +102,20 @@
   "git-diff":
     showIconsInEditorGutter: true
   "git-history": {}
+  github:
+    filesystemEventDiagnostics: true
+    gitDiagnostics: true
+    viewChangesForCurrentFileDiffPaneSplitDirection: "right"
   hidpi: {}
   "highlight-selected":
     hideHighlightOnSelectedWord: true
     highlightBackground: true
     lightTheme: true
+  hyperclick:
+    linuxTriggerKeys: "shiftKey,ctrlKey"
+  "js-hyperclick":
+    jumpToImport: true
+    usePendingPanes: true
   "keybinding-cheatsheet": {}
   "keyboard-localization":
     useKeyboardLayout: "nb_NO"
@@ -97,9 +126,6 @@
   linter: {}
   "linter-eslint":
     disableWhenNoEslintrcFileInPath: true
-    globalNodePath: "/home/ricardo/.nvm/versions/node/v7.10.0"
-    showRuleIdInMessage: false
-    useGlobalEslint: true
   "linter-glsl":
     glslangValidatorPath: "/usr/local/bin/glslangValidator"
     linkSimilarShaders: true
@@ -113,18 +139,24 @@
     executable: "/usr/bin/pylint2"
     pythonPath: "/usr/bin/python2"
   "linter-ui-default":
-    panelHeight: 388
+    hidePanelWhenEmpty: true
+    panelHeight: 141
+    panelRepresents: "Entire Project"
+    showProviderName: true
+    statusBarClickBehavior: "Toggle Status Bar Scope"
+    statusBarRepresents: "Current File"
   minimap:
     plugins:
       "git-diff": true
       "git-diffDecorationsZIndex": 0
       pigments: true
+  "minimap-git-diff":
+    useGutterDecoration: true
   "node-debugger": {}
   nuclide:
     "nuclide-working-sets": {}
   "one-dark-ui":
-    fontSize: 12
-    layoutMode: "Compact"
+    fontSize: 10
     tabSizing: "Even"
   processing: {}
   "project-folder":
@@ -140,10 +172,15 @@
   tabs:
     enableMruTabSwitching: false
   "terminal-panel": {}
+  "tester-jest":
+    binaryPath: "npm test --"
+    nodeEnv: "development"
   "tool-bar":
     position: "Right"
     visible: false
-  "tree-view": {}
+  "tree-view":
+    alwaysOpenExisting: true
+    squashDirectoryNames: true
   "tree-view-git-status": {}
   welcome:
     showOnStartup: false

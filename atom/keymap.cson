@@ -19,7 +19,7 @@
 
   # Sublime Parity
   'ctrl-,': 'application:show-settings'
-  'ctrl-shift-n': 'application:new-window'
+  'ctrl-shift-n': '!unset'
   'ctrl-shift-w': 'window:close'
   'ctrl-o': 'application:open-file'
   'ctrl-q': 'application:quit'
@@ -88,6 +88,7 @@
   'ctrl-9': 'pane:show-item-9'
 
 'atom-workspace atom-text-editor':
+  'ctrl-shift-n': 'notebook:new-notepad'
   # Platform Bindings
   'ctrl-left': 'editor:move-to-beginning-of-word'
   'ctrl-right': 'editor:move-to-end-of-word'
