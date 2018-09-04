@@ -1,9 +1,0 @@
-<snippet>
-    <content><![CDATA[
-|${1}|
-    ${2:#do something..}
-]]></content>
-    <tabTrigger>|</tabTrigger>
-    <scope>source.ruby</scope>
-    <description>Pipe me</description>
-</snippet>

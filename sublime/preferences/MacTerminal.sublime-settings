@@ -1,6 +1,0 @@
-{
-    "terminal" : "iterm",
-    "osascript" : "/usr/bin/osascript",
-    "debug" : true,
-    "directory_mode" : "default"
-}
