@@ -1,0 +1,14 @@
+groups:
+  p5: [
+    "C:\\Users\\Ricardo\\creative-coding\\p5",
+  ],
+  projects: [
+    "C:\\Users\\Ricardo\\Projects\\go",
+    # "C:\\Users\\Ricardo\\Projects\\bart"
+    "C:\\Users\\Ricardo\\Projects\\exercism"
+    "C:\\Users\\Ricardo\\Projects\\go-learning"
+    "C:\\Users\\Ricardo\\Projects\\go-prog-book"
+    # "C:\\Users\\Ricardo\\Projects\\react-test"
+    "C:\\Users\\Ricardo\\Projects\\ricardomatias.github.io"
+    "C:\\Users\\Ricardo\\Projects\\scraping"
+  ]

@@ -1,0 +1,168 @@
+"*":
+  "advanced-open-file":
+    createDirectories: true
+    createFileInstantly: true
+  "atom-alignment": {}
+  "atom-material-ui":
+    compactTreeView: true
+    depth: true
+    disableAnimations: true
+    panelContrast: true
+    tabSize: "Small"
+  "autocomplete-plus":
+    confirmCompletion: "tab"
+  autosave: {}
+  core:
+    autoHideMenuBar: true
+    customFileTypes:
+      "text.xml": [
+        "bpmn"
+        "dmn"
+        "cmmn"
+      ]
+    disabledPackages: [
+      "language-ruby"
+      "language-ruby-on-rails"
+      "language-sql"
+      "language-todo"
+      "language-perl"
+      "language-php"
+      "language-objective-c"
+      "language-mustache"
+      "language-hyperlink"
+      "language-csharp"
+      "language-c"
+      "language-javascript"
+      "language-javascript-better"
+      "pigments"
+      "atom-chai-snippets"
+      "linter-scss-lint"
+      "color-picker"
+      "react"
+      "linter-htmlhint"
+      "save-session"
+      "autoclose-html"
+      "notebook"
+    ]
+    openEmptyEditorOnStart: false
+    packagesWithKeymapsDisabled: [
+      "turbo-javascript"
+      "git-diff"
+      "linter-htmlhint"
+      "linter"
+    ]
+    telemetryConsent: "no"
+    themes: [
+      "nucleus-dark-ui"
+      "monokai"
+    ]
+    uriHandlerRegistration: "always"
+  docblockr:
+    auto_add_method_tag: true
+    short_primitives: true
+  editor:
+    atomicSoftTabs: false
+    fontFamily: "Hack, Menlo, Consolas, DejaVu Sans Mono, monospace"
+    fontSize: 15
+    invisibles: {}
+    preferredLineLength: 120
+    showIndentGuide: true
+    softWrap: true
+    tabType: "soft"
+    zoomFontWhenCtrlScrolling: false
+  emmet: {}
+  "exception-reporting":
+    userId: "687d1a45-4465-08a0-8791-e8ad6da16131"
+  "fuzzy-finder": {}
+  "git-control":
+    showGitFlowButton: false
+  "git-diff":
+    showIconsInEditorGutter: true
+  "git-history": {}
+  hidpi:
+    scaleFactor: 1.75
+    updateOnResize: false
+  "highlight-selected":
+    hideHighlightOnSelectedWord: true
+    highlightBackground: true
+    lightTheme: true
+  "keybinding-cheatsheet": {}
+  "keyboard-localization":
+    useKeyboardLayout: "nb_NO"
+    useKeyboardLayoutFromPath: "/home/ricardo/.atom/pt_mac.json"
+  "language-babel":
+    disableWhenNoBabelrcFileInPath: true
+    suppressTranspileOnSaveMessages: true
+  linter: {}
+  "linter-eslint":
+    disableWhenNoEslintrcFileInPath: true
+    globalNodePath: "/home/ricardo/.nvm/versions/node/v7.2.0"
+    useGlobalEslint: true
+  "linter-htmlhint": {}
+  "linter-jshint":
+    disableWhenNoJshintrcFileInPath: true
+    executablePath: "/home/ricardo/.nvm/versions/node/v6.9.0/bin/jshint"
+    lintInlineJavaScript: true
+    lintJSXFiles: true
+  "linter-pylint":
+    executable: "/usr/bin/pylint2"
+    pythonPath: "/usr/bin/python2"
+  "linter-ui-default":
+    panelHeight: 141
+  minimap:
+    plugins:
+      "git-diff": true
+      "git-diffDecorationsZIndex": 0
+      pigments: true
+  "node-debugger": {}
+  processing: {}
+  "project-folder":
+    projectRootDirectories: [
+      "/home/ricardo/Projects/bpmn.io"
+      "/home/ricardo/Projects/Open\\ Source/"
+    ]
+  react:
+    enabledForAllJavascriptFiles: true
+  "save-session":
+    dataSaveFolder: "/home/ricardo/.atom/projects"
+    skipSavePrompt: false
+  tabs: {}
+  "terminal-panel": {}
+  "tool-bar":
+    position: "Right"
+    visible: false
+  "tree-view": {}
+  "tree-view-git-status": {}
+  veda: {}
+  welcome:
+    showOnStartup: false
+".basic.html.text":
+  editor:
+    preferredLineLength: 120
+".coffee.jsx.source":
+  editor:
+    preferredLineLength: 120
+".git-commit.text":
+  editor:
+    preferredLineLength: 120
+".git-config.source":
+  editor:
+    preferredLineLength: 120
+".git-rebase.text":
+  editor:
+    preferredLineLength: 120
+".go.source":
+  editor:
+    preferredLineLength: 120
+".gohtml.html.text":
+  editor:
+    preferredLineLength: 120
+".gotemplate.source":
+  editor:
+    preferredLineLength: 120
+".js.jsx.source":
+  editor:
+    preferredLineLength: 120
+".source.supercollider":
+  editor:
+    preferredLineLength: 120
